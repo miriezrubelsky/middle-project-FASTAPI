@@ -5,6 +5,7 @@ recursive-include fast_api *.py
 recursive-include fast_api/trained_model *.pickle
 recursive-include fast_api/processing *.py
 recursive-include fast_api/data *.py
+recursive-include fast_api/logs *
 include churn_prediction_pipeline/VERSION
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]

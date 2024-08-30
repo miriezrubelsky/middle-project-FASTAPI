@@ -23,3 +23,9 @@ alias_to_attr_map = {
 
 MODEL_NAME = 'churn_model.pickle'
 SAVE_MODEL_PATH = os.path.join(PACKAGE_ROOT,'trained_model')
+
+LOGGING_DIR = os.path.join(PACKAGE_ROOT, 'logs')  # Set logs directory at the root level
+LOGGING_FILENAME = os.path.join(LOGGING_DIR, 'fastapi_logs.log')
+LOGGING_FILEMODE = 'w'  # 'w' for overwrite, 'a' for append
+LOGGING_LEVEL = 'DEBUG'  # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
