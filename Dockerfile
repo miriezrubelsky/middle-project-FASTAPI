@@ -16,6 +16,12 @@ RUN chmod +x /code/src
 
 RUN pip install --no-cache-dir --upgrade -r code/src/requirements.txt
 
+# Declare the directory as a volume
+VOLUME /code/src/fast_api/trained_model
+# Declare the directory as a volume
+VOLUME /code/src/fast_api/logs
+
+
 EXPOSE 8000
 
 WORKDIR /code
