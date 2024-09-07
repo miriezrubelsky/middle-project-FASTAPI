@@ -2,11 +2,13 @@ version: "2.2"
 
 services:
   app:
-    build: .
+    image: miriperelman/middle-project-fastapi-app:latest
+    #build: .
     restart: unless-stopped
     container_name: app
     ports:
       - 8000:8000
+    
     networks:
       example-network:
         ipv4_address: 172.16.238.10
@@ -50,3 +52,4 @@ networks:
       driver: default
       config:
         - subnet: 172.16.238.0/24
+       
